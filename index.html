@@ -1,14 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
-    <script src='./js/script.js'></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akatsuki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/icon-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
-    
+    <header>
+        <nav class="nav">
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="our-profile.html">Our Profile</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome" id="home">
+            <h1 id="greeting">Hi there, welcome to our website</h1>
+            <p>Selamat menjelajahi <span class="uniq">Akatsuki</span> kami</p>
+        </section>
+
+        <section class="partners">
+            <h2>Our Partners</h2>
+            <div class="partner-cards">
+                <div class="partner-card">
+                    <img src="img/partner1.png" alt="Partner 1">
+                    <p>Partner 1</p>
+                </div>
+                <div class="partner-card">
+                    <img src="img/partner2.png" alt="Partner 2">
+                    <p>Partner 2</p>
+                </div>
+                <div class="partner-card">
+                    <img src="img/partner3.png" alt="Partner 3">
+                    <p>Partner 3</p>
+                </div>
+                    <div class="partner-card">
+                    <img src="img/partner4.png" alt="Partner 4">
+                    <p>Partner 4</p>
+                </div>
+                <div class="partner-card">
+                    <img src="img/partner2.png" alt="Partner 2">
+                    <p>Partner 2</p>
+                </div>
+                <div class="partner-card">
+                    <img src="img/partner1.png" alt="Partner 1">
+                    <p>Partner 1</p>
+                </div>
+                <div class="partner-card">
+                    <img src="img/partner4.png" alt="Partner 4">
+                    <p>Partner 4</p>
+                </div>
+                <div class="partner-card">
+                    <img src="img/partner3.png" alt="Partner 3">
+                    <p>Partner 3</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="contact" class="contact">
+        <h2>Message Us</h2>
+        <div class="contact-container">
+        <form id="messageForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="formResult" class="form-result">
+            <h3>Your Message Will Appear Here</h3>
+            <p><strong>Name:</strong> <span id="resultName">-</span></p>
+            <p><strong>Email:</strong> <span id="resultEmail">-</span></p>
+            <p><strong>Message:</strong> <span id="resultMessage">-</span></p>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="img/logo.png" alt="Logo" class="footer-logo">
+            </div>
+            <div class="footer-middle">
+                <div class="socials">
+                    <a href="#">Instagram</a> |
+                    <a href="#">Facebook</a> |
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p>Jl. Ninja No. 99, Konoha</p>
+                <p>Email: contact@akatsuki.com</p>
+                <p>&copy; 2025 Akatsuki. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

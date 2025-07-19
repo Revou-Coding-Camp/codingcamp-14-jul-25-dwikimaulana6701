@@ -1,0 +1,322 @@
+/* Reset dan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 1rem 2rem;
+  color: #fff;
+  margin: 0 -2rem;
+  position: relative;
+}
+
+.logo {
+  width: 8rem;
+  height: auto;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  position: relative;
+  z-index: 100;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links li a.active {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.welcome, .about, .vision-mission, .partners, .contact {
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.uniq {
+  color: red;
+  font-weight: bold;
+}
+
+.partner-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.partner-card {
+  background: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.partner-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.contact-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+form {
+  flex: 1 1 50%;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form-result {
+  flex: 1 1 50%;
+  border: 2px solid #ccc;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 200px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Gambar banner */
+.banner {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.vision-mission {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.vision, .mission {
+  flex: 1 1 45%;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vision h2, .mission h2 {
+  margin-bottom: 1rem;
+}
+
+.mission ol {
+  padding-left: 1.2rem;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  padding: 2rem 0;
+  margin: 0 -2rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1 1 30%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+.socials a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .partner-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .partner-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #444;
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 99;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  form, .form-result {
+    flex: 1 1 100%;
+  }
+
+  .vision-mission {
+    flex-direction: column;
+  }
+
+  .partner-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    flex: 1 1 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .partner-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .partner-cards {
+    grid-template-columns: 1fr;
+  }
+}
